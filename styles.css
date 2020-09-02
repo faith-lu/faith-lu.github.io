@@ -3,8 +3,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 
 body {
+	background: #000;
     min-width: 100%;
     margin: 0;
+}
+
+/* Custom scrollbar */	
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fff; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffcb6a; 
+}
+
+div.text_body {
+	color: #fff;
+	font-family: Montserrat;
+	margin: 50px;
+}
+
+h1 {
+    font-family: Arial;
+    font-size: 60px;
+    color: #000;
+    background: #ffcb6a;
+    padding: 0px 20px;
 }
 
 img {
@@ -13,33 +45,44 @@ img {
 }
 ul {
 	display: inline-block;
+    vertical-align: text-bottom;
 }
 li {
 	display: inline;
+	margin: 25px;
+}
+
+.diamond {
+	background-image: #fff;
+	height: 100px;
+	width: 100px;
+	transform: rotate(45deg);
 }
 
 .navbar {
-    background: #000;
+    background-image: url(assets/display1.jpg) no-repeat center;
+    border-bottom: 1px solid #ffcb6a;
     font-family: 'Montserrat', sans-serif;
     height: 100px;
     min-width: 100%;
     overflow: hidden;
-    position: fixed;
+    position: inherit;
 }
 .navbar a {
 	color: #fff;
 	font-family: inherit;
-	font-size: 20px;
+	font-size: 24px;
+    letter-spacing: 3px;
 	text-decoration: none;
 	text-transform: uppercase;
 }
 
 .navbar a:hover {
-	color: #ff7844;
+	color: #ffcb6a;
 }
 
 .navbar a:active {
-	color: #ffcb6a;
+	color: #ff7844;
 }
 
 /* From w3school's responsive navbar section (https://www.w3schools.com/howto/howto_js_topnav_responsive.asp) */
