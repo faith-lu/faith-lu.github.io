@@ -1,26 +1,36 @@
-<!-- BLOCK 1 -->
-<nav class="navbar navbar-expand-sm navbar-light bg-light">
-
-  <!-- BLOCK 2 -->
-  <!-- Brand and toggle button get grouped for better mobile display -->
-  <a class="navbar-brand" href="/">Home</a>
-  <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon" />
-  </button>
-  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-    <!-- BLOCK 3 -->
-    <!-- Replace the '#' with links to each of your converters -->
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a href="/test" class="nav-link">F to C</a>
-      </li>
-      <li class="nav-item">
-        <a href="/test" class="nav-link">C to F</a>
-      </li>
-      <li class="nav-item">
-        <a href="/test" class="nav-link">Mi to Km</a>
-      </li>
-    </ul>
-  </div><!-- /.navbar-collapse -->
-</nav>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <!-- Used for responsive navigation bar -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="navbar" id="myTopnav">
+            <a href="index.html"><img src="/assets/wordmark.png" alt="Palette Generator"></a>
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="generator.html">Generator</a></li>
+                <li><a href="examples.html">Examples</a></li>
+                <li><a href="https://github.com/faith-lu/faith-lu.github.io">GitHub</a></li>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </ul>
+        </div>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "navbar") {
+                    x.className += " responsive";
+                }
+                else {
+                    x.className = "navbar";
+                }
+            }
+        </script>
+    </body>
+</html>

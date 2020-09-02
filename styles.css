@@ -8,10 +8,12 @@ body {
 }
 
 img {
-    margin: 15px 50px;
+    margin: 15px 30px;
 
 }
-
+ul {
+	display: inline-block;
+}
 li {
 	display: inline;
 }
@@ -21,10 +23,11 @@ li {
     font-family: 'Montserrat', sans-serif;
     height: 100px;
     min-width: 100%;
+    overflow: hidden;
     position: fixed;
 }
 
-a.nav_label:link {
+.navbar a:link {
 	color: #fff;
 	font-family: inherit;
 	font-size: 20px;
@@ -32,7 +35,7 @@ a.nav_label:link {
 	text-transform: uppercase;
 }
 
-a.nav_label:hover {
+.navbar a:hover {
 	color: #fff;
 	font-family: inherit;
 	font-size: 20px;
@@ -40,7 +43,7 @@ a.nav_label:hover {
 	text-transform: uppercase;
 }
 
-a.nav_label:visited {
+.navbar a:visited {
 	color: #fff;
 	font-family: inherit;
 	font-size: 20px;
@@ -48,10 +51,37 @@ a.nav_label:visited {
 	text-transform: uppercase;
 }
 
-a.nav_label:active {
-	color: #fff;
+.navbar a:active {
+	color: #ff0000;
 	font-family: inherit;
 	font-size: 20px;
 	text-decoration: none;
 	text-transform: uppercase;
+}
+
+/* From w3school's responsive navbar section (https://www.w3schools.com/howto/howto_js_topnav_responsive.asp) */
+.navbar .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+	.topnav a:not(:first-child) {display: none;}
+	.topnav a.icon {
+		float: right;
+		display: block;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.navbar.responsive {position: relative;}
+	.navbar.responsive .icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.navbar.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
 }

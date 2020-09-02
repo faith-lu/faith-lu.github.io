@@ -4,18 +4,18 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="styles.css">
+		<!-- Used for responsive navigation bar -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<title>SPIS Palette Generator</title>
 	</head>
 	<body>
-	    <header class="navbar">
-	        <img src="/assets/wordmark.png" alt="Palette Generator">
-	    	<ul>
-	    		<li><a class="nav_label" href="about.html">About</a></li>
-	    		<li><a class="nav_label" href="generator.html">Generator</a></li>
-	    		<li><a class="nav_label" href="examples.html">Examples</a></li>
-	    		<li><a class="nav_label" href="https://github.com/faith-lu/faith-lu.github.io">GitHub</a></li>
-	    	</ul>
-	    </header>
-	<a href="/layout.html">layout.html</a>
-
-</body></html>
+	    <div class="navbar" />
+		<script>
+			$(function() {
+    			$(".navbar").load("navbar.html");
+			});
+		</script>
+		<a href="layout.html">layout.html</a>
+	</body>
+</html>
