@@ -26,8 +26,7 @@ li {
     overflow: hidden;
     position: fixed;
 }
-
-.navbar a:link {
+.navbar a {
 	color: #fff;
 	font-family: inherit;
 	font-size: 20px;
@@ -36,27 +35,11 @@ li {
 }
 
 .navbar a:hover {
-	color: #fff;
-	font-family: inherit;
-	font-size: 20px;
-	text-decoration: none;
-	text-transform: uppercase;
-}
-
-.navbar a:visited {
-	color: #fff;
-	font-family: inherit;
-	font-size: 20px;
-	text-decoration: none;
-	text-transform: uppercase;
+	color: #ff7844;
 }
 
 .navbar a:active {
-	color: #ff0000;
-	font-family: inherit;
-	font-size: 20px;
-	text-decoration: none;
-	text-transform: uppercase;
+	color: #ffcb6a;
 }
 
 /* From w3school's responsive navbar section (https://www.w3schools.com/howto/howto_js_topnav_responsive.asp) */
@@ -65,8 +48,8 @@ li {
 }
 
 @media screen and (max-width: 600px) {
-	.topnav a:not(:first-child) {display: none;}
-	.topnav a.icon {
+	.navbar a:not(:first-child) {display: none;}
+	.navbar a.icon {
 		float: right;
 		display: block;
 	}
