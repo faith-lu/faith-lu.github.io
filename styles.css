@@ -50,8 +50,7 @@ h1 {
 }
 .visual {
 	float: right;
-	text-align: center;
-    border-left: 10px solid #ffcb6a;
+	text-align: center;	
 }
 img {
     max-width: 100%;

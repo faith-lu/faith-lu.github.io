@@ -12,26 +12,6 @@
     			$(".navbar").load("navbar.html");
 			});
 		</script>
-		<style> 
-			.square {
-			  width: 100px;
-			  height: 100px;
-			  margin-bottom: 10px;
-			  background-color: #ea5a41;
-			  position: relative;
-			  animation-name: rgb;
-			  animation-duration: 1s;
-			  animation-fill-mode: forwards;
-			  animation-timing-function: linear;
-			}
-
-			@keyframes rgb {
-			  0%   {background-color: #ffcb6a; left: 5%;}
-			  50%  {background-color: #ff7844; left: 20%;}
-			  100% {background-color: #ea5a41; left: 40%;}
-
-			}
-		</style>
 		<title>Palette Generator | SPIS 2020</title>
 	</head>
 	<body>
@@ -42,12 +22,14 @@
 			    	<p>
 			    		A tool to create color palettes using the most dominant colors in an image.
 			    	</p>
+			    	<br />
 					<p>
 			    		Please head to the navigation bar to get started. Alternatively, select one of the options on the diamond.
 			    	</p>
-					<div class="square"></div>
-					<div class="square"></div>
-					<div class="square"></div>
+			    	<br />
+					<p>
+			    		For detailed instructions, please head over to <a href="generator.html">the generator</a>.
+			    	</p>
 			    </div>
 		    	<div class="visual">
 		    		<img src="assets/visual.png" alt="Visual" usemap="#visualmap">
@@ -56,7 +38,7 @@
 		    		<map name="visualmap">
 		    			<area shape="poly" coords="299,0,157,142,303,288,449,142,306,-1" href="index.html" alt="Index">
 		    			<area shape="poly" coords="0,298,141,156,290,304,142,450,0,307" href="about.html" alt="About">
-		    			<area shape="poly" coords="605,298,462,155,317,303,464,452,604,311" href="generate.html" alt="Generate">
+		    			<area shape="poly" coords="605,298,462,155,317,303,464,452,604,311" href="generator.html" alt="Generate">
 		    			<area shape="poly" coords="298,605,156,463,304,315,451,463,310,603" href="examples.html" alt="Examples">
 		    		</map>
 
