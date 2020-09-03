@@ -46,10 +46,12 @@ h1 {
     color: #000;
     background: #ffcb6a;
     padding: 0px 20px;
+    text-transform: uppercase;
 }
-visual {
+.visual {
 	float: right;
 	text-align: center;
+    border-left: 10px solid #ffcb6a;
 }
 img {
     max-width: 100%;
