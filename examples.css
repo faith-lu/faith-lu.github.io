@@ -11,3 +11,18 @@ div.rgb {
 	width: 30px;
 	height: auto;
 }
+
+.body_text {
+	color: #fff;
+	font-family: Montserrat;
+	margin: 50px;
+}
+
+h1 {
+    font-family: Arial;
+    font-size: 60px;
+    color: #000;
+    background: #ffcb6a;
+    padding: 0px 20px;
+    text-transform: uppercase;
+}
