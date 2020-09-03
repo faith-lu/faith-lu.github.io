@@ -7,22 +7,24 @@ body {
     min-width: 100%;
     margin: 0;
 }
-
+a + a {
+    margin-left: 30px;
+}
 /* Custom scrollbar */	
 ::-webkit-scrollbar {
-  width: 12px;
+	width: 12px;
 }
 
 ::-webkit-scrollbar-track {
-  background: transparent; 
+	background: transparent; 
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #fff; 
+	background: #fff; 
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #ffcb6a; 
+	background: #ffcb6a; 
 }
 
 .text_body {
@@ -38,25 +40,22 @@ h1 {
     background: #ffcb6a;
     padding: 0px 20px;
 }
-
+visual {
+	float: right;
+	text-align: center;
+}
 img {
-    margin: 15px 30px;
-
+    max-width: 100%;
+    height: auto;
 }
-ul {
-	display: inline-block;
-    vertical-align: text-bottom;
-}
-li {
-	display: inline;
-	margin: 25px;
+.fa {
+	margin: 10px;
 }
 
 .navbar {
     background: #000;
     border-bottom: 1px solid #ffcb6a;
     font-family: 'Montserrat', sans-serif;
-    height: 100px;
     min-width: 100%;
     overflow: hidden;
     position: inherit;
@@ -66,8 +65,10 @@ li {
 	font-family: inherit;
 	font-size: 24px;
     letter-spacing: 3px;
+    line-height: inherit;
 	text-decoration: none;
 	text-transform: uppercase;
+    vertical-align: middle;
 }
 
 .navbar a:hover {
