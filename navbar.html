@@ -6,6 +6,17 @@
         <link rel="stylesheet" type="text/css" href="styles.css">
         <!-- Used for responsive navigation bar -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "navbar") {
+                    x.className += " responsive";
+                }
+                else {
+                    x.className = "navbar";
+                }
+            }
+        </script>
     </head>
     <body>
         <div class="navbar" id="myTopnav">
@@ -21,16 +32,5 @@
                 </a></li>
             </ul>
         </div>
-        <script>
-            function myFunction() {
-                var x = document.getElementById("myTopnav");
-                if (x.className === "navbar") {
-                    x.className += " responsive";
-                }
-                else {
-                    x.className = "navbar";
-                }
-            }
-        </script>
     </body>
 </html>
