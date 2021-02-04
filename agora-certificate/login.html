@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>DocTalk Login</title>
+        <meta name="google-signin-client_id" content="182774700821-gamt2f99q2l1oimu7641l0idhmlbbbcc.apps.googleusercontent.com">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="login.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+        <script src="https://cdn.agora.io/sdk/release/AgoraRTCSDK-3.4.0.js"></script>
+        <script src="agoraRTC.js"></script>
+    </head>
+    <body class="container">
+        <div class="login-container">
+            <img class="logo" src="assets/logo.svg" />
+            <input type="text" id="username" placeholder="Username" />
+            <a href="index.html"><button id="join-button">Join</button></a>
+            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+            <div id="login-header">Schedule your next appointment today.</div>
+        </div>
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <script>
+            function onSignIn(googleUser) {
+                var profile = googleUser.getBasicProfile();
+                console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+                console.log('Name: ' + profile.getName());
+                console.log('Image URL: ' + profile.getImageUrl());
+                console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+            }
+            function validate(){
+                let username = document.getElementById("username");
+                if(username.value.length >= 0) {
+                    username.className = "";
+                    return true;
+                }
+                else {
+                    username.className = "invalid";
+                    return false;
+                }
+            }
+        </script>
+    </body>
+</html>

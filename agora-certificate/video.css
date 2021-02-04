@@ -1,0 +1,20 @@
+.video-container {
+    background: #FFFFFF;
+    box-shadow: 0 0 20px #4fc2ea;
+    width: 90vw;
+    height: 90vh;
+    min-width: 350px;
+    margin: 2rem;
+}
+
+#welcome {
+    font-size: 2rem;
+    text-align: center;
+    display: block;
+    margin: 50px;
+}
+
+#remote-video, #local-video {
+    background: #000;
+    border: 2px solid #FFFFFF;
+}

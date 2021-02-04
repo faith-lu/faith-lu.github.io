@@ -1,0 +1,45 @@
+.login-container {
+    background: #FFFFFF;
+    box-shadow: 0 0 20px #4fc2ea;
+    width: 25%;
+    min-width: 350px;
+    min-height: 85%;
+    text-align: center;
+}
+
+#login-header {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    font-size: 18px;
+    padding: 0 60px;
+}
+
+#join-button {
+    border: 0;
+    background: #4fc2ea;
+    border-radius: 5px;
+    color: #fff;
+    margin: 20px;
+    width: 85%;
+    height: 30px;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#join-button:hover {
+    background: rgb(19, 154, 199);
+    color: #fff;
+    cursor: pointer;
+}
+
+.abcRioButton {
+    width: 85%!important;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.invalid {
+    border-bottom: 2px solid red;
+}
